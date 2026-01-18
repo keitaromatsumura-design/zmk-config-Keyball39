@@ -30,16 +30,16 @@ layers:
   - M
   - {t: ',', s: <}
   - {t: ., s: '>'}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '-', s: _}
   - $$mdi:apple-keyboard-control$$
   - LEFT WIN
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:arrow-up-bold$$', h: FUN}
   - {t: '$$mdi:arrow-down-bold$$', h: MOUSE}
   - SYM
-  - MOUSE
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
-  - {t: '-', s: _}
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   MOUSE:
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -77,7 +77,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - FUN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   SYM:
@@ -157,7 +157,7 @@ layers:
   - {type: held}
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   NUM:
