@@ -21,7 +21,7 @@ layers:
   - K
   - L
   - {t: '$$mdi:backspace$$', type: backspace}
-  - Z
+  - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - X
   - C
   - V
