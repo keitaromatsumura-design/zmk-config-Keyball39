@@ -28,8 +28,8 @@ layers:
   - B
   - N
   - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - {t: ',', s: '?'}
+  - {t: ., s: ;}
   - JP MINUS
   - $$mdi:apple-keyboard-control$$
   - LEFT WIN
