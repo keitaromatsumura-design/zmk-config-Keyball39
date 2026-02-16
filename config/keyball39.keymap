@@ -1,3 +1,4 @@
+#include <dt-bindings/zmk/keys_jp.h>
 #define DEFAULT 0
 #define NUM     1
 #define SYM     2
