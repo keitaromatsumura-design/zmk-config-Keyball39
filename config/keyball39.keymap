@@ -3,7 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/mouse.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/keys_jp.h> // 日本語配列用ヘッダーを追加
+#include <dt-bindings/zmk/keys_jp.h>
 
 #define DEFAULT 0
 #define NUM     1
@@ -28,7 +28,7 @@
 &caps_word { continue-list = <UNDERSCORE MINUS>; };
 
 / {
-    // カスタム挙動（元の設定を維持）
+    /* カスタム挙動の定義 */
     behaviors {
         cmqus: comma_question {
             compatible = "zmk,behavior-mod-morph";
@@ -47,7 +47,7 @@
         };
     };
 
-    // マクロ（元の設定を維持）
+    /* マクロの定義 */
     macros {
         Hiragana: Hiragana {
             compatible = "zmk,behavior-macro";
