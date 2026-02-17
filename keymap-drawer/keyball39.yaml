@@ -30,7 +30,7 @@ layers:
   - M
   - {t: ',', s: '?'}
   - {t: ., s: ;}
-  - JP MINUS
+  - {t: '-', s: _}
   - $$mdi:apple-keyboard-control$$
   - LEFT WIN
   - $$mdi:apple-keyboard-option$$
@@ -41,16 +41,16 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: MOUSE}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
   NUM:
-  - JP 1
-  - JP 2
-  - JP 3
-  - JP 4
-  - JP 5
-  - JP 6
-  - JP 7
-  - JP 8
-  - JP 9
-  - JP 0
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
@@ -81,36 +81,36 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   SYM:
-  - JP EXCL
-  - JP AT
-  - JP HASH
-  - JP DLLR
-  - JP PRCNT
-  - JP CARET
-  - JP AMPS
-  - JP ASTRK
-  - JP LPAR
-  - JP RPAR
+  - {t: Sft+1, s: Sft+!}
+  - {t: '[', s: '{'}
+  - {t: Sft+3, s: Sft+#}
+  - {t: Sft+4, s: Sft+$}
+  - {t: Sft+5, s: Sft+%}
+  - {t: '=', s: +}
+  - {t: Sft+6, s: Sft+^}
+  - {t: Sft+', s: Sft+"}
+  - {t: Sft+8, s: Sft+*}
+  - {t: Sft+9, s: Sft+(}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - JP MINUS
-  - JP EQUAL
-  - JP LBKT
-  - JP RBKT
-  - JP SQT
+  - {t: '-', s: _}
+  - {t: Sft+-, s: Sft+_}
+  - {t: ']', s: '}'}
+  - '#'
+  - {t: Sft+7, s: Sft+&}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - JP UNDER
-  - JP PLUS
+  - Sft+INT1
+  - {t: Sft+;, s: 'Sft+:'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - JP BSLH
+  - INT1
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
