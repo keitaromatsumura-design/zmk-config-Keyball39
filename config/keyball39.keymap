@@ -9,6 +9,7 @@
 // 日本語配列（JIS）記号の定義
 // -----------------------------------------------------
 
+
 #define JP_AT     LBKT      // @
 #define JP_LPAR   LS(N8)    // (
 #define JP_RPAR   LS(N9)    // )
