@@ -51,26 +51,26 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - ^
-  - '@'
+  - A
+  - '*'
   - {t: /, s: '?'}
-  - _
+  - +
   - {t: '-', s: _}
   - {t: ;, s: ':'}
-  - ':'
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - INT YEN
-  - '~'
-  - {t: '''', s: '"'}
-  - '?'
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Sft+~
+  - X
+  - C
   - {t: '=', s: +}
   - {t: '-', s: _}
   - +
   - '*'
-  - '{'
-  - '}'
-  - '|'
+  - $$mdi:arrow-down-bold$$
+  - {t: ., s: '>'}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -100,7 +100,7 @@ layers:
   - ':'
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - INT YEN
+  - {t: '$$mdi:transfer$$', type: trans}
   - '~'
   - {t: '''', s: '"'}
   - '?'
@@ -110,7 +110,7 @@ layers:
   - '*'
   - '{'
   - '}'
-  - '|'
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -131,7 +131,7 @@ layers:
   - F8
   - F9
   - F10
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - PgUp
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
@@ -140,13 +140,13 @@ layers:
   - {t: '$$mdi:arrow-left-bold$$', h: toggle}
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - PgDn
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '-', s: _}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - PRINTSCREEN
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
@@ -180,7 +180,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - SCROLL
   - $$mdi:mouse-right-click-outline$$
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -190,7 +190,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
