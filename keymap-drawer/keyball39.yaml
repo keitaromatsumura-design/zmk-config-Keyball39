@@ -90,27 +90,27 @@ layers:
   - {t: '''', s: '"'}
   - (
   - )
-  - '&bl BL_ON'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - \
+  - Ctl+$$mdi:apple-keyboard-control$$
+  - '@'
+  - {t: /, h: toggle, s: '?'}
+  - {t: '-', s: _}
+  - _
+  - {t: ;, s: ':'}
+  - ':'
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - INT YEN
+  - '~'
+  - {t: '''', s: '"'}
+  - '?'
+  - {t: '=', s: +}
+  - _
+  - +
+  - '*'
+  - '{'
+  - '}'
+  - '|'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
