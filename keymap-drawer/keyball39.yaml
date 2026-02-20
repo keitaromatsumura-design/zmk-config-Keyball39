@@ -51,26 +51,26 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - ^
-  - '@'
+  - {t: '=', s: +}
+  - {t: '[', s: '{'}
   - {t: /, s: '?'}
   - {t: '-', s: _}
-  - _
+  - Sft+INT1
   - {t: ;, s: ':'}
-  - ':'
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - INT YEN
-  - '~'
   - {t: '''', s: '"'}
+  - {t: ']', s: '}'}
+  - '#'
+  - INT3
+  - {t: Sft+=, s: Sft++}
+  - {t: Sft+7, s: Sft+&}
   - '?'
-  - {t: '=', s: +}
-  - _
-  - +
-  - '*'
-  - '{'
-  - '}'
-  - '|'
+  - {t: Sft+-, s: Sft+_}
+  - Sft+INT1
+  - {t: Sft+;, s: 'Sft+:'}
+  - {t: Sft+', s: Sft+"}
+  - {t: 'Sft+]', s: 'Sft+}'}
+  - Sft+#
+  - Sft+INT3
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -81,36 +81,36 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   SYM:
-  - '!'
-  - '"'
-  - '#'
-  - $
-  - '%'
-  - '&'
-  - {t: '''', s: '"'}
-  - (
-  - )
-  - \
-  - Ctl+$$mdi:apple-keyboard-control$$
-  - '@'
-  - {t: /, h: toggle, s: '?'}
-  - {t: '-', s: _}
-  - _
-  - {t: ;, s: ':'}
-  - ':'
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
-  - INT YEN
-  - '~'
-  - {t: '''', s: '"'}
-  - '?'
+  - {t: Sft+1, s: Sft+!}
+  - {t: Sft+2, s: Sft+@}
+  - {t: Sft+3, s: Sft+#}
+  - {t: Sft+4, s: Sft+$}
+  - {t: Sft+5, s: Sft+%}
+  - {t: Sft+6, s: Sft+^}
+  - {t: Sft+7, s: Sft+&}
+  - {t: Sft+8, s: Sft+*}
+  - {t: Sft+9, s: Sft+(}
+  - INT1
   - {t: '=', s: +}
-  - _
-  - +
-  - '*'
-  - '{'
-  - '}'
-  - '|'
+  - {t: '[', s: '{'}
+  - {t: /, s: '?'}
+  - {t: '-', s: _}
+  - Sft+INT1
+  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
+  - {t: ']', s: '}'}
+  - '#'
+  - INT3
+  - {t: Sft+=, s: Sft++}
+  - {t: Sft+7, s: Sft+&}
+  - '?'
+  - {t: Sft+-, s: Sft+_}
+  - Sft+INT1
+  - {t: Sft+;, s: 'Sft+:'}
+  - {t: Sft+', s: Sft+"}
+  - {t: 'Sft+]', s: 'Sft+}'}
+  - Sft+#
+  - Sft+INT3
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -137,7 +137,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:arrow-left-bold$$', h: toggle}
+  - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
