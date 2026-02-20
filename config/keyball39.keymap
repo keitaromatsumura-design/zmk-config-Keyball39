@@ -9,7 +9,6 @@
 // 日本語配列（JIS）記号の定義
 // -----------------------------------------------------
 
-
 #define JP_AT     LBKT      // @
 #define JP_LPAR   LS(N8)    // (
 #define JP_RPAR   LS(N9)    // )
@@ -94,10 +93,10 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&mt ESC Q     &kp W         &kp E     &kp R           &kp T                                     &kp Y        &kp U  &kp I   &kp O   &kp P
-&kp A         &kp S         &kp D     &kp F           &kp G                                     &kp H        &kp J  &kp K   &kp L   &kp BACKSPACE
-&mt LSHIFT Z  &kp X         &kp C     &kp V           &kp B                                     &kp N        &kp M  &cmqus  &dtsmi  &kp ENTER
-&kp RCTRL     &kp LEFT_WIN  &kp LALT  &lt 2 UP_ARROW  &lt 4 DOWN_ARROW  &lt 3 GRAVE  &kp ENTER  &lt 4 SPACE                         &mt RIGHT_SHIFT ENTER
+&mt ESC Q     &kp W         &kp E     &kp R           &kp T                                        &kp Y        &kp U  &kp I    &kp O   &kp P
+&kp A         &kp S         &lt 3 D   &kp F           &kp G                                        &kp H        &kp J  &lt 3 D  &kp L   &kp BACKSPACE
+&mt LSHIFT Z  &kp X         &kp C     &kp V           &kp B                                        &kp N        &kp M  &cmqus   &dtsmi  &kp ENTER
+&kp RCTRL     &kp LEFT_WIN  &kp LALT  &lt 1 UP_ARROW  &lt 2 DOWN_ARROW  &lt 4 GRAVE  &kp UP_ARROW  &lt 4 SPACE                          &mt RIGHT_SHIFT DELETE
             >;
         };
 
