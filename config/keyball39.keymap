@@ -5,7 +5,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 // -----------------------------------------------------
-// 日本語配列（JIS）記号の定義
+// 日本語配列（JIS）記号の基本定義
 // -----------------------------------------------------
 
 #define JP_AT    LBKT      // @
@@ -27,14 +27,9 @@
 #define JP_YEN   INT3      // ¥
 #define JP_BSLH  INT1      // ろ (Backslash)
 #define JP_UNDER LS(INT1)  // _ (Shift+ろ)
-
-// --- 追加分のJIS記号定義 ---
-
 #define JP_DQT   LS(N2)    // "
 #define JP_TILDE LS(EQUAL) // ~
 #define JP_COLON SQT       // :
-#define JP_LBRC  LS(RBKT)  // {
-#define JP_RBRC  LS(NUHS)  // }
 #define JP_PIPE  LS(INT3)  // |
 
 // -----------------------------------------------------
@@ -63,29 +58,38 @@
 
 / {
     /* カスタム挙動 */
-
     behaviors {
+        // QWRTレイヤー用のカンマ・ドット（JIS対応版）
         cmqus: comma_question {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA_QUESTION";
             #binding-cells = <0>;
-            bindings = <&kp COMMA>, <&kp QUESTION>;
-
+            bindings = <&kp COMMA>, <&kp LS(SLASH)>; // ? は Shift+/
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
         dtsmi: dot_semi {
             compatible = "zmk,behavior-mod-morph";
             label = "DOT_SEMI";
             #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp SEMI>;
-
+            bindings = <&kp DOT>, <&kp SEMI>; 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        // ---- 🌟US配列エミュレート用 Mod-Morph（ここがキモです）----
+        jp_n2: jp_n2 { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N2>, <&kp LBKT>; mods = <(MOD_LSFT|MOD_RSFT)>; }; // 2 / @
+        jp_n6: jp_n6 { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N6>, <&kp EQUAL>; mods = <(MOD_LSFT|MOD_RSFT)>; }; // 6 / ^
+        jp_n7: jp_n7 { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N7>, <&kp LS(N6)>; mods = <(MOD_LSFT|MOD_RSFT)>; }; // 7 / &
+        jp_n8: jp_n8 { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N8>, <&kp LS(SQT)>; mods = <(MOD_LSFT|MOD_RSFT)>; }; // 8 / *
+        jp_n9: jp_n9 { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N9>, <&kp LS(N8)>; mods = <(MOD_LSFT|MOD_RSFT)>; }; // 9 / (
+        jp_n0: jp_n0 { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N0>, <&kp LS(N9)>; mods = <(MOD_LSFT|MOD_RSFT)>; }; // 0 / )
+
+        jp_minus: jp_minus { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp MINUS>, <&kp LS(INT1)>; mods = <(MOD_LSFT|MOD_RSFT)>; }; // - / _
+        jp_semi:  jp_semi  { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp SEMI>, <&kp SQT>; mods = <(MOD_LSFT|MOD_RSFT)>; }; // ; / :
+        jp_equal: jp_equal { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LS(MINUS)>, <&kp LS(SEMI)>; mods = <(MOD_LSFT|MOD_RSFT)>; }; // = / +
+        jp_sqt:   jp_sqt   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LS(N7)>, <&kp LS(N2)>; mods = <(MOD_LSFT|MOD_RSFT)>; }; // ' / "
     };
 
     /* マクロ */
-
     macros {
         Hiragana: Hiragana {
             compatible = "zmk,behavior-macro";
@@ -101,70 +105,70 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&mt ESC Q     &kp W         &kp E     &kp R           &kp T                                        &kp Y        &kp U  &kp I   &kp O   &kp P
-&kp A         &kp S         &lt 4 D   &kp F           &kp G                                        &kp H        &kp J  &kp K   &kp L   &kp BACKSPACE
-&mt LSHIFT Z  &kp X         &kp C     &kp V           &kp B                                        &kp N        &kp M  &cmqus  &dtsmi  &kp ENTER
-&kp RCTRL     &kp LEFT_WIN  &kp LALT  &lt 1 UP_ARROW  &lt 2 DOWN_ARROW  &lt 3 GRAVE  &kp UP_ARROW  &lt 4 SPACE                         &mt RIGHT_SHIFT DELETE
+&mt ESC Q     &kp W         &kp E      &kp R          &kp T                                          &kp Y        &kp U  &kp I   &kp O   &kp P
+&kp A         &kp S         &lt 4 D    &kp F          &kp G                                          &kp H        &kp J  &kp K   &kp L   &kp BACKSPACE
+&mt LSHIFT Z  &kp X         &kp C      &kp V          &kp B                                          &kp N        &kp M  &cmqus  &dtsmi  &kp ENTER
+&kp RCTRL     &kp LEFT_WIN  &kp LALT   &lt 1 UP_ARROW &lt 2 DOWN_ARROW  &lt 3 GRAVE  &kp UP_ARROW  &lt 4 SPACE                           &mt RIGHT_SHIFT DELETE
             >;
         };
 
         number_layer {
             label = "NUM";
             bindings = <
-&kp N1         &kp N2        &kp N3     &kp N4     &kp N5                     &kp N6         &kp N7        &kp N8          &kp N9     &kp N0
-&kp A          &kp ASTERISK  &kp SLASH  &kp PLUS   &kp MINUS                  &kp SEMICOLON  &kp LEFT      &kp UP_ARROW    &kp RIGHT  &trans
-&kp RS(TILDE)  &kp X         &kp C      &kp EQUAL  &kp MINUS                  &kp PLUS       &kp ASTERISK  &kp DOWN_ARROW  &kp DOT    &trans
-&trans         &trans        &trans     &trans     &trans     &trans  &trans  &trans                                                  &trans
+&kp N1       &jp_n2       &kp N3       &kp N4       &kp N5                                         &jp_n6       &jp_n7       &jp_n8       &jp_n9       &jp_n0
+&kp JP_CARET &kp JP_AT    &kp SLASH    &jp_minus    &kp JP_UNDER                                   &jp_semi     &kp JP_COLON &kp RBKT     &kp NUHS     &kp JP_YEN
+&kp JP_TILDE &kp JP_SQT   &kp QUESTION &jp_equal    &kp JP_UNDER                                   &kp JP_PLUS  &kp JP_ASTRK &kp LS(RBKT) &kp LS(NUHS) &kp JP_PIPE
+&trans       &trans       &trans       &trans       &trans          &trans        &trans           &trans                                              &trans
             >;
         };
 
         symbol_layer {
             label = "SYM";
             bindings = <
-&kp EXCLAMATION  &kp DOUBLE_QUOTES  &kp HASH      &kp DOLLAR      &kp PERCENT                  &kp AMPERSAND  &kp SQT       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp NON_US_BACKSLASH
-&kp RC(LCTRL)    &kp AT_SIGN        &kt SLASH     &kp UNDERSCORE  &kp MINUS                    &kp SEMICOLON  &kp COLON     &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &trans
-&kp TILDE        &kp SQT            &kp QUESTION  &kp EQUAL       &kp MINUS                    &kp PLUS       &kp ASTERISK  &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans
-&trans           &trans             &trans        &trans          &trans       &trans  &trans  &trans                                                                    &trans
+&kp JP_EXCL  &kp JP_DQT   &kp JP_HASH  &kp JP_DLLR  &kp JP_PRCNT                                   &kp JP_AMPS  &kp JP_SQT   &kp JP_LPAR  &kp JP_RPAR  &kp JP_BSLH
+&kp JP_CARET &kp JP_AT    &kt SLASH    &jp_minus    &kp MINUS                                      &jp_semi     &kp JP_COLON &kp RBKT     &kp NUHS     &kp JP_YEN
+&kp JP_TILDE &jp_sqt      &kp QUESTION &jp_equal    &kp MINUS                                      &kp JP_PLUS  &kp JP_ASTRK &kp LS(RBKT) &kp LS(NUHS) &kp JP_PIPE
+&trans       &trans       &trans       &trans       &trans          &trans        &trans           &trans                                              &trans
             >;
         };
 
         function_layer {
             label = "FUN";
             bindings = <
-&kp F1         &kp F2          &kp F3        &kp F4     &kp F5                           &kp F6           &kp F7          &kp F8        &kp F9     &kp F10
-&kp PAGE_UP    &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT  &kp MINUS                        &none            &kt LEFT        &kp UP_ARROW  &kp RIGHT  &trans
-&kp PAGE_DOWN  &kp LEFT        &kp DOWN      &kp RIGHT  &kp MINUS                        &kp PRINTSCREEN  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans
-&trans         &trans          &trans        &trans     &trans     &trans  &bt BT_SEL 1  &bt BT_SEL 2                                              &trans
+&kp F1  &kp F2          &kp F3        &kp F4      &kp F5                                         &kp F6        &kp F7          &kp F8        &kp F9      &kp F10
+&none   &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT   &none                                          &none         &kt LEFT        &kp UP_ARROW  &kp RIGHT   &none
+&none   &kp LEFT        &kp DOWN      &kp RIGHT   &none                                          &none         &kp LEFT_ARROW  &kp DOWN      &kp RIGHT   &trans
+&trans  &trans          &trans        &trans      &trans  &trans        &bt BT_SEL 1             &bt BT_SEL 2                                            &trans
             >;
         };
 
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&kp N1     &kp N2    &kp N3  &kp N4     &kp N5                  &kp N6    &kp N7     &kp N8  &kp N9     &kp N0
-&kp LEFT   &kp DOWN  &kp UP  &kp RIGHT  &none                   &mkp MB5  &mkp LCLK  &mo 5   &mkp RCLK  &trans
-&kp LSHFT  &trans    &trans  &trans     &trans                  &mkp MB4  &none      &none   &none      &trans
-&trans     &trans    &trans  &trans     &trans  &trans  &trans  &mo 4                                   &none
+&kp N1     &jp_n2    &kp N3  &kp N4    &kp N5                                         &jp_n6    &jp_n7     &jp_n8  &jp_n9    &jp_n0
+&kp LEFT   &kp DOWN  &kp UP  &kp RIGHT &none                                          &mkp MB5  &mkp LCLK  &mo 5   &mkp RCLK &kp BACKSPACE
+&kp LSHFT  &trans    &trans  &trans    &trans                                         &mkp MB4  &none      &none   &none     &none
+&trans     &trans    &trans  &trans    &trans  &trans        &trans                   &mo 4                                  &none
             >;
         };
 
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                                         &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                         &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                         &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans        &trans                   &trans                          &trans
             >;
         };
 
         snipe_layer {
             label = "SNIPE";
             bindings = <
-&trans  &trans  &trans  &trans  &bootloader                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                       &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans       &trans  &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &bootloader                                    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                         &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                                         &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans       &trans        &trans              &trans                          &trans
             >;
         };
     };
