@@ -67,7 +67,9 @@
             label = "COMMA_QUESTION";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp LS(SLASH)>;
- // ? は Shift+/
+
+            // ? は Shift+/
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -181,10 +183,10 @@
         number_layer {
             label = "NUM";
             bindings = <
-&kp N1  &kp NUMBER_2  &kp N3     &kp N4     &kp N5                     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8          &kp NUMBER_9           &kp NUMBER_0
-&trans  &kp PLUS      &kp SLASH  &kp PLUS   &kp MINUS                  &jp_semi      &kp JP_COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &trans        &trans     &jp_equal  &kp MINUS                  &kp PLUS      &kp JP_ASTRK  &kp LS(COMMA)         &kp LS(PERIOD)         &trans
-&trans  &trans        &trans     &trans     &trans     &trans  &trans  &trans                                                                   &trans
+&kp N1  &kp NUMBER_2  &kp N3     &kp N4        &kp N5                     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8          &kp NUMBER_9           &kp NUMBER_0
+&trans  &kp PLUS      &kp SLASH  &kp ASTERISK  &kp MINUS                  &jp_semi      &kp JP_COLON  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans  &trans        &trans     &jp_equal     &kp MINUS                  &kp PLUS      &kp JP_ASTRK  &kp LS(COMMA)         &kp LS(PERIOD)         &trans
+&trans  &trans        &trans     &trans        &trans     &trans  &trans  &trans                                                                   &trans
             >;
         };
 
