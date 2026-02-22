@@ -57,7 +57,7 @@ layers:
   - '*'
   - {t: '-', s: _}
   - {t: ;, s: ''''}
-  - {t: '''', s: '"'}
+  - ':'
   - (
   - )
   - {t: '$$mdi:transfer$$', type: trans}
@@ -67,7 +67,7 @@ layers:
   - {t: Sft+-, s: Sft+;}
   - {t: '-', s: _}
   - +
-  - {t: Sft+', s: Sft+"}
+  - '*'
   - {t: 'Sft+,', s: Sft+<}
   - Sft+.
   - {t: '$$mdi:transfer$$', type: trans}
