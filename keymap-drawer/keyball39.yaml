@@ -42,35 +42,35 @@ layers:
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
   NUM:
   - {t: '1', s: '!'}
-  - {t: '2', s: '['}
+  - '2'
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
-  - {t: '6', s: '='}
-  - {t: '7', s: Sft+6}
-  - {t: '8', s: Sft+'}
-  - {t: '9', s: Sft+8}
-  - {t: '0', s: Sft+9}
-  - {t: '=', s: +}
-  - {t: '[', s: '{'}
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - +
   - {t: /, s: '?'}
-  - {t: '-', s: Sft+INT1}
-  - Sft+INT1
+  - +
+  - {t: '-', s: _}
   - {t: ;, s: ''''}
   - {t: '''', s: '"'}
-  - {t: ']', s: '}'}
-  - '#'
-  - INT3
-  - {t: Sft+=, s: Sft++}
-  - {t: Sft+7, s: Sft+&}
-  - '?'
+  - (
+  - )
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: Sft+-, s: Sft+;}
-  - Sft+INT1
-  - {t: Sft+;, s: 'Sft+:'}
+  - {t: '-', s: _}
+  - +
   - {t: Sft+', s: Sft+"}
-  - {t: 'Sft+]', s: 'Sft+}'}
-  - Sft+#
-  - Sft+INT3
+  - {t: 'Sft+,', s: Sft+<}
+  - Sft+.
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -81,36 +81,36 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   SYM:
-  - {t: Sft+1, s: Sft+!}
-  - {t: Sft+2, s: Sft+@}
-  - {t: Sft+3, s: Sft+#}
-  - {t: Sft+4, s: Sft+$}
-  - {t: Sft+5, s: Sft+%}
-  - {t: Sft+6, s: Sft+^}
-  - {t: Sft+7, s: Sft+&}
-  - {t: Sft+8, s: Sft+*}
-  - {t: Sft+9, s: Sft+(}
-  - INT1
-  - {t: '=', s: +}
-  - {t: '[', s: '{'}
+  - '!'
+  - '"'
+  - '#'
+  - $
+  - '%'
+  - '&'
+  - {t: '''', s: '"'}
+  - (
+  - )
+  - \
+  - $$mdi:apple-keyboard-control$$
+  - '@'
   - {t: /, h: toggle, s: '?'}
-  - {t: '-', s: Sft+INT1}
+  - _
   - {t: '-', s: _}
   - {t: ;, s: ''''}
-  - {t: '''', s: '"'}
+  - ':'
+  - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - '#'
-  - INT3
-  - {t: Sft+=, s: Sft++}
-  - {t: Sft+7, s: Sft+2}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '~'
+  - {t: '''', s: '"'}
   - '?'
-  - {t: Sft+-, s: Sft+;}
+  - {t: '=', s: +}
   - {t: '-', s: _}
-  - {t: Sft+;, s: 'Sft+:'}
-  - {t: Sft+', s: Sft+"}
+  - +
+  - '*'
   - {t: 'Sft+]', s: 'Sft+}'}
   - Sft+#
-  - Sft+INT3
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
