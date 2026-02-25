@@ -8,29 +8,27 @@
 // 日本語配列（JIS）記号の基本定義
 // -----------------------------------------------------
 
-#define JP_AT    LBKT      // @
-#define JP_LPAR  LS(N8)    // (
-#define JP_RPAR  LS(N9)    // )
-#define JP_ASTRK LS(SQT)   // *
-#define JP_PLUS  LS(SEMI)  // +
-#define JP_MINUS MINUS     // -
-#define JP_EQUAL LS(MINUS) // =
-#define JP_EXCL  LS(N1)    // !
-#define JP_HASH  LS(N3)    // #
-#define JP_DLLR  LS(N4)    // $
-#define JP_PRCNT LS(N5)    // %
-#define JP_CARET EQUAL     // ^
-#define JP_AMPS  LS(N6)    // &
-#define JP_SQT   LS(N7)    // '
-#define JP_LBKT  RBKT      // [
-#define JP_RBKT  NUHS      // ]
-#define JP_YEN   INT3      // ¥
-#define JP_BSLH  INT1      // ろ (Backslash)
-#define JP_UNDER LS(INT1)  // _ (Shift+ろ)
-#define JP_DQT   LS(N2)    // "
-#define JP_TILDE LS(EQUAL) // ~
-#define JP_COLON SQT       // :
-#define JP_PIPE  LS(INT3)  // |
+// OS設定を日本語キーボードのまま使用するための変換定義
+#define JP_DQUOTE       AT                // "
+#define JP_AMPERSAND    CARET             // &
+#define JP_QUOTE        AMPERSAND         // '
+#define JP_EQUAL        UNDER             // =
+#define JP_CARET        EQUAL             // ^
+#define JP_YEN          0x89              // ¥
+#define JP_PLUS         COLON             // +
+#define JP_TILDE        PLUS              // ~
+#define JP_PIPE         LS(0x89)          // |
+#define JP_AT           LEFT_BRACKET      // @
+#define JP_COLON        SINGLE_QUOTE      // :
+#define JP_ASTERISK     DOUBLE_QUOTES     // *
+#define JP_BACKQUOTE    LEFT_BRACE        // `
+#define JP_UNDERSCORE   LS(0x87)          // _
+#define JP_LBRACKET     RIGHT_BRACKET     // [
+#define JP_RBRACKET     BACKSLASH         // ]
+#define JP_LPAREN       ASTERISK          // (
+#define JP_RPAREN       LEFT_PARENTHESIS  // )
+#define JP_LBRACE       RIGHT_BRACE       // {
+#define JP_RBRACE       PIPE              // }
 
 // -----------------------------------------------------
 
