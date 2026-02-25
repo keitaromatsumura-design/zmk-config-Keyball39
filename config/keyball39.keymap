@@ -173,10 +173,10 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&mt ESC Q     &kp W         &kp E     &kp R           &kp T                                        &kp Y        &kp U  &kp I   &kp O   &kp P
-&kp A         &kp S         &lt 4 D   &kp F           &kp G                                        &kp H        &kp J  &kp K   &kp L   &kp BACKSPACE
-&mt LSHIFT Z  &kp X         &kp C     &kp V           &kp B                                        &kp N        &kp M  &cmqus  &dtsmi  &kp ENTER
-&kp RCTRL     &kp LEFT_WIN  &kp LALT  &lt 1 UP_ARROW  &lt 2 DOWN_ARROW  &lt 3 GRAVE  &kp UP_ARROW  &lt 4 SPACE                         &mt RIGHT_SHIFT DELETE
+&mt ESC Q     &kp W         &kp E     &kp R           &kp T                                         &kp Y        &kp U  &kp I   &kp O   &kp P
+&kp A         &kp S         &lt 4 D   &kp F           &kp G                                         &kp H        &kp J  &kp K   &kp L   &kp ENTER
+&mt LSHIFT Z  &kp X         &kp C     &kp V           &kp B                                         &kp N        &kp M  &cmqus  &dtsmi  &kp MINUS
+&kp RCTRL     &kp LEFT_WIN  &kp LALT  &lt 1 UP_ARROW  &lt 2 DOWN_ARROW  &lt 3 GRAVE  &kp BACKSPACE  &lt 4 SPACE                         &mt RIGHT_SHIFT DELETE
             >;
         };
 
