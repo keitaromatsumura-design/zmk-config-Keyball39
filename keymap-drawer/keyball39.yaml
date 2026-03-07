@@ -37,8 +37,8 @@ layers:
   - {t: '$$mdi:arrow-up-bold$$', h: NUM}
   - {t: '$$mdi:arrow-down-bold$$', h: SYM}
   - {t: '`', h: FUN, s: '~'}
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', h: MOUSE}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-space$$', h: MOUSE}
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
   NUM:
   - {t: '1', s: '!'}
