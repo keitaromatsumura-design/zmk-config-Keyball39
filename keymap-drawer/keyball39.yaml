@@ -20,7 +20,7 @@ layers:
   - J
   - K
   - L
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: Z, h: '$$mdi:apple-keyboard-shift$$'}
   - X
   - C
@@ -37,8 +37,8 @@ layers:
   - {t: '$$mdi:arrow-up-bold$$', h: NUM}
   - {t: '$$mdi:arrow-down-bold$$', h: SYM}
   - {t: '`', h: FUN, s: '~'}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '$$mdi:keyboard-space$$', h: MOUSE}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', h: MOUSE}
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
   NUM:
   - {t: '1', s: '!'}
