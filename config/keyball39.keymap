@@ -7,8 +7,8 @@
 // -----------------------------------------------------
 // 日本語配列（JIS）記号の基本定義
 // -----------------------------------------------------
-
 // OS設定を日本語キーボードのまま使用するための変換定義
+
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
@@ -171,10 +171,10 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&mt ESC Q     &kp W         &kp E     &kp R           &kp T                                         &kp Y        &kp U  &kp I   &kp O   &kp P
-&kp A         &kp S         &lt 4 D   &kp F           &kp G                                         &kp H        &kp J  &kp K   &kp L   &kp ENTER
-&mt LSHIFT Z  &kp X         &kp C     &kp V           &kp B                                         &kp N        &kp M  &cmqus  &dtsmi  &kp MINUS
-&kp RCTRL     &kp LEFT_WIN  &kp LALT  &lt 1 UP_ARROW  &lt 2 DOWN_ARROW  &lt 3 GRAVE  &kp BACKSPACE  &lt 4 SPACE                         &mt RIGHT_SHIFT DELETE
+&mt ESC Q     &kp W         &kp E     &kp R           &kp T                                     &kp Y        &kp U  &kp I   &kp O   &kp P
+&kp A         &kp S         &lt 4 D   &kp F           &kp G                                     &kp H        &kp J  &kp K   &kp L   &kp BACKSPACE
+&mt LSHIFT Z  &kp X         &kp C     &kp V           &kp B                                     &kp N        &kp M  &cmqus  &dtsmi  &kp MINUS
+&kp RCTRL     &kp LEFT_WIN  &kp LALT  &lt 1 UP_ARROW  &lt 2 DOWN_ARROW  &lt 3 GRAVE  &kp SPACE  &lt 4 ENTER                         &mt RIGHT_SHIFT DELETE
             >;
         };
 
