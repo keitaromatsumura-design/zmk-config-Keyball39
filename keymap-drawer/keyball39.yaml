@@ -57,9 +57,9 @@ layers:
   - '*'
   - {t: '-', s: _}
   - {t: ;, s: ''''}
-  - ':'
-  - (
-  - )
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -67,9 +67,9 @@ layers:
   - {t: Sft+-, s: Sft+;}
   - {t: '-', s: _}
   - +
-  - '*'
-  - {t: 'Sft+,', s: Sft+<}
-  - Sft+.
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
