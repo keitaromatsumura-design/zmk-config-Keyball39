@@ -13,8 +13,8 @@ layers:
   - P
   - A
   - S
-  - {t: D, h: MOUSE}
-  - F
+  - D
+  - {t: F, h: MOUSE}
   - G
   - H
   - J
@@ -161,8 +161,8 @@ layers:
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   MOUSE:
-  - {t: '1', s: '!'}
-  - {t: '2', s: '['}
+  - $$mdi:keyboard-esc$$
+  - '2'
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
@@ -173,8 +173,8 @@ layers:
   - {t: '0', s: Sft+9}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
-  - {t: '$$mdi:arrow-up-bold$$', type: held}
-  - $$mdi:arrow-right-bold$$
+  - $$mdi:arrow-up-bold$$
+  - {type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&mkp MB5'
   - $$mdi:mouse-left-click-outline$$
@@ -213,8 +213,8 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
