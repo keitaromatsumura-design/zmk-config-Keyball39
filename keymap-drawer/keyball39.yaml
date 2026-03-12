@@ -56,7 +56,7 @@ layers:
   - {t: /, s: '?'}
   - '*'
   - {t: '-', s: _}
-  - {t: ;, s: ''''}
+  - _
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
