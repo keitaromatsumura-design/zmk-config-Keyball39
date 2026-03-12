@@ -211,10 +211,10 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&kp ESCAPE  &kp NUMBER_2  &kp N3  &kp N4  &kp N5                  &jp_n6    &jp_n7     &jp_n8  &jp_n9     &jp_n0
-&kp LEFT    &kp DOWN      &kp UP  &trans  &none                   &mkp MB5  &mkp LCLK  &mo 5   &mkp RCLK  &kp BACKSPACE
-&kp LSHFT   &trans        &trans  &trans  &trans                  &mkp MB4  &none      &none   &none      &none
-&trans      &trans        &trans  &trans  &trans  &trans  &trans  &mo 4                                   &none
+&kp ESCAPE    &kp NUMBER_2  &kp N3  &kp N4  &kp N5                  &jp_n6    &jp_n7     &jp_n8  &jp_n9     &jp_n0
+&kp UP_ARROW  &kp DOWN      &trans  &trans  &none                   &mkp MB5  &mkp LCLK  &mo 5   &mkp RCLK  &kp BACKSPACE
+&kp LSHFT     &trans        &trans  &trans  &trans                  &mkp MB4  &none      &none   &none      &none
+&trans        &trans        &trans  &trans  &trans  &trans  &trans  &mo 4                                   &none
             >;
         };
 
