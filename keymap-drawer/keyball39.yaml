@@ -171,9 +171,9 @@ layers:
   - {t: '8', s: Sft+'}
   - {t: '9', s: Sft+8}
   - {t: '0', s: Sft+9}
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-down-bold$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '&mkp MB5'
