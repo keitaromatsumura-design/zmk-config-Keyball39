@@ -172,7 +172,7 @@
             label = "QWRT";
             bindings = <
 &mt ESC Q     &kp W         &kp E     &kp R           &kp T                                     &kp Y        &kp U  &kp I   &kp O   &kp P
-&kp A         &kp S         &lt 4 D   &kp F           &kp G                                     &kp H        &kp J  &kp K   &kp L   &kp BACKSPACE
+&kp A         &kp S         &kp D     &lt 4 F         &kp G                                     &kp H        &kp J  &kp K   &kp L   &kp BACKSPACE
 &mt LSHIFT Z  &kp X         &kp C     &kp V           &kp B                                     &kp N        &kp M  &cmqus  &dtsmi  &kp MINUS
 &kp RCTRL     &kp LEFT_WIN  &kp LALT  &lt 3 UP_ARROW  &lt 2 DOWN_ARROW  &lt 1 GRAVE  &kp ENTER  &lt 4 SPACE                         &mt RIGHT_SHIFT DELETE
             >;
@@ -211,10 +211,10 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&kp N1     &jp_n2    &kp N3  &kp N4     &kp N5                  &jp_n6    &jp_n7     &jp_n8  &jp_n9     &jp_n0
-&kp LEFT   &kp DOWN  &kp UP  &kp RIGHT  &none                   &mkp MB5  &mkp LCLK  &mo 5   &mkp RCLK  &kp BACKSPACE
-&kp LSHFT  &trans    &trans  &trans     &trans                  &mkp MB4  &none      &none   &none      &none
-&trans     &trans    &trans  &trans     &trans  &trans  &trans  &mo 4                                   &none
+&kp ESCAPE  &kp NUMBER_2  &kp N3  &kp N4  &kp N5                  &jp_n6    &jp_n7     &jp_n8  &jp_n9     &jp_n0
+&kp LEFT    &kp DOWN      &kp UP  &trans  &none                   &mkp MB5  &mkp LCLK  &mo 5   &mkp RCLK  &kp BACKSPACE
+&kp LSHFT   &trans        &trans  &trans  &trans                  &mkp MB4  &none      &none   &none      &none
+&trans      &trans        &trans  &trans  &trans  &trans  &trans  &mo 4                                   &none
             >;
         };
 
