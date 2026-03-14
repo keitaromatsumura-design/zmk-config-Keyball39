@@ -191,10 +191,10 @@
         symbol_layer {
             label = "SYM";
             bindings = <
-&kp EXCLAMATION  &kp AT    &kp HASH      &kp DOLLAR           &kp PERCENT                  &kp CARET  &kp AMPS           &kp ASTRK     &kp LPAR         &kp INTERNATIONAL_3
-&kp EQUAL        &kp LBKT  &kp FSLH      &kp INTERNATIONAL_1  &kp MINUS                    &jp_semi   &kp SQT            &kp RBKT      &kp NON_US_HASH  &trans
-&kp EQUAL        &kp AMPS  &kp QUESTION  &kp MINUS            &kp MINUS                    &kp SEMI   &kp DOUBLE_QUOTES  &kp LS(RBKT)  &kp LS(NUHS)     &trans
-&trans           &trans    &trans        &trans               &trans       &trans  &trans  &trans                                                       &trans
+&kp EXCLAMATION  &kp AT    &kp HASH      &kp DOLLAR      &kp PERCENT                  &kp CARET     &kp AMPS           &kp ASTRK     &kp LPAR         &kp INTERNATIONAL_3
+&kp EQUAL        &kp LBKT  &kp FSLH      &kp LS(INT_RO)  &kp MINUS                    &jp_semi      &kp SQT            &kp RBKT      &kp NON_US_HASH  &trans
+&kp LS(EQUAL)    &kp AMPS  &kp QUESTION  &kp MINUS       &kp MINUS                    &kp LS(SEMI)  &kp DOUBLE_QUOTES  &kp LS(RBKT)  &kp LS(NUHS)     &trans
+&trans           &trans    &trans        &trans          &trans       &trans  &trans  &trans                                                          &trans
             >;
         };
 
