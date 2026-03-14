@@ -94,19 +94,19 @@ layers:
   - {t: '=', s: +}
   - {t: '[', s: '{'}
   - {t: /, s: '?'}
-  - INTERNATIONAL 1
+  - Sft+INT RO
   - {t: '-', s: _}
   - {t: ;, s: ''''}
   - {t: '''', s: '"'}
   - {t: ']', s: '}'}
   - '#'
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '=', s: +}
+  - {t: Sft+=, s: Sft++}
   - '&'
   - '?'
   - {t: '-', s: _}
   - {t: '-', s: _}
-  - {t: ;, s: ':'}
+  - {t: Sft+;, s: 'Sft+:'}
   - '"'
   - {t: 'Sft+]', s: 'Sft+}'}
   - Sft+#
