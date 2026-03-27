@@ -59,6 +59,7 @@
 
     behaviors {
         // ---- 🌟Zキー専用のMod-Tap（ここを追加しました）----
+
         mt_z: mod_tap_z {
             compatible = "zmk,behavior-hold-tap";
             label = "MOD_TAP_Z";
@@ -155,14 +156,7 @@
             bindings = <&kp LS(MINUS)>, <&kp LS(SEMI)>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        }; // = / +
-        jp_sqt: jp_sqt {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp LS(N7)>, <&kp LS(N2)>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        }; // ' / "
+        }; // = / + // ' / "
     };
 
     /* マクロ */
@@ -182,50 +176,50 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&mt ESC Q      &kp W         &kp E     &kp R         &kp T                                       &kp Y        &kp U  &kp I   &kp O   &kp P
-&kp A          &kp S         &kp D     &lt 4 F       &kp G                                       &kp H        &kp J  &kp K   &kp L   &kp BACKSPACE
-&mt_z LSHIFT Z &kp X         &kp C     &kp V         &kp B                                       &kp N        &kp M  &cmqus  &dtsmi  &kp MINUS
-&kp RCTRL      &kp LEFT_WIN  &kp LALT  &lt 3 UP_ARROW  &lt 2 DOWN_ARROW  &lt 1 GRAVE  &kp SPACE  &lt 4 ENTER                          &mt RIGHT_SHIFT DELETE
+&mt ESC Q     &kp W         &kp E     &kp R           &kp T                                     &kp Y        &kp U  &kp I   &kp O   &kp P
+&kp A         &kp S         &kp D     &lt 4 F         &kp G                                     &kp H        &kp J  &kp K   &kp L   &kp BACKSPACE
+&mt LSHIFT Z  &kp X         &kp C     &kp V           &kp B                                     &kp N        &kp M  &cmqus  &dtsmi  &kp MINUS
+&kp RCTRL     &kp LEFT_WIN  &kp LALT  &lt 3 UP_ARROW  &lt 2 DOWN_ARROW  &lt 1 GRAVE  &kp ENTER  &lt 4 SPACE                         &mt RIGHT_SHIFT DELETE
             >;
         };
 
         number_layer {
             label = "NUM";
             bindings = <
-&kp N1  &kp NUMBER_2  &kp N3      &kp N4      &kp N5                                     &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
-&trans  &kp PLUS      &kp SLASH   &kp ASTERISK  &kp MINUS                                  &kp UNDERSCORE  &kp LEFT      &kp UP_ARROW  &kp RIGHT     &trans
-&trans  &trans        &trans      &jp_equal   &kp EQUAL                                  &trans          &kp LEFT      &kp DOWN      &kp RIGHT     &trans
-&trans  &trans        &trans      &trans      &trans      &trans  &trans  &trans                                                                 &trans
+&kp N1  &kp NUMBER_2  &kp N3     &kp N4        &kp N5                     &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+&trans  &kp PLUS      &kp SLASH  &kp ASTERISK  &kp MINUS                  &kp UNDERSCORE  &kp LEFT      &kp UP_ARROW  &kp RIGHT     &trans
+&trans  &trans        &trans     &jp_equal     &kp EQUAL                  &trans          &kp LEFT      &kp DOWN      &kp RIGHT     &trans
+&trans  &trans        &trans     &trans        &trans     &trans  &trans  &trans                                                    &trans
             >;
         };
 
         symbol_layer {
             label = "SYM";
             bindings = <
-&kp EXCLAMATION  &kp AT    &kp HASH    &kp DOLLAR  &kp PERCENT                                     &kp CARET     &kp AMPS         &kp ASTRK     &kp LPAR         &kp INTERNATIONAL_3
-&kp EQUAL        &kp LBKT  &kp FSLH    &kp ASTRK   &kp MINUS                                       &jp_semi      &kp SQT          &kp RBKT      &kp NON_US_HASH  &trans
-&kp LS(EQUAL)    &kp AMPS  &kp QUESTION  &jp_equal   &kp LS(INTERNATIONAL_1)                         &kp LS(SEMI)  &kp DOUBLE_QUOTES  &kp LS(RBKT)  &kp LS(NUHS)     &trans
-&trans           &trans    &trans      &trans      &trans            &trans  &trans  &trans                                                                    &trans
+&kp EXCLAMATION  &kp AT    &kp HASH      &kp DOLLAR  &kp PERCENT                              &kp CARET     &kp AMPS           &kp ASTRK     &kp LPAR         &kp INTERNATIONAL_3
+&kp EQUAL        &kp LBKT  &kp FSLH      &kp ASTRK   &kp MINUS                                &jp_semi      &kp SQT            &kp RBKT      &kp NON_US_HASH  &trans
+&kp LS(EQUAL)    &kp AMPS  &kp QUESTION  &jp_equal   &kp LS(INTERNATIONAL_1)                  &kp LS(SEMI)  &kp DOUBLE_QUOTES  &kp LS(RBKT)  &kp LS(NUHS)     &trans
+&trans           &trans    &trans        &trans      &trans                   &trans  &trans  &trans                                                          &trans
             >;
         };
 
         function_layer {
             label = "FUN";
             bindings = <
-&kp F1  &kp F2          &kp F3        &kp F4      &kp F5                                     &kp F6           &kp F7          &kp F8        &kp F9      &kp F10
-&none   &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT   &kp PG_UP                                  &kp PRINTSCREEN  &kt LEFT        &kp UP_ARROW  &kp RIGHT   &trans
-&none   &kp LEFT        &kp DOWN      &kp RIGHT   &kp PG_DN                                  &none            &kp LEFT_ARROW  &kp DOWN      &kp RIGHT   &trans
-&trans  &trans          &trans        &trans      &trans     &trans  &bt BT_SEL 1  &bt BT_SEL 2                                                           &trans
+&kp F1  &kp F2          &kp F3        &kp F4     &kp F5                           &kp F6           &kp F7          &kp F8        &kp F9     &kp F10
+&none   &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT  &kp PG_UP                        &kp PRINTSCREEN  &kt LEFT        &kp UP_ARROW  &kp RIGHT  &trans
+&none   &kp LEFT        &kp DOWN      &kp RIGHT  &kp PG_DN                        &none            &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans
+&trans  &trans          &trans        &trans     &trans     &trans  &bt BT_SEL 1  &bt BT_SEL 2                                              &trans
             >;
         };
 
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans  &trans                      &jp_n6    &jp_n7     &jp_n8  &jp_n9     &jp_n0
-&trans      &trans  &trans  &trans  &none                       &mkp MB5  &mkp LCLK  &mo 5   &mkp RCLK  &kp BACKSPACE
-&kp LSHFT   &trans  &trans  &trans  &trans                      &mkp MB4  &none      &none   &none      &none
-&trans      &trans  &trans  &trans  &trans  &trans  &trans  &mo 4                                       &none
+&kp ESCAPE  &trans  &trans  &trans  &trans                  &jp_n6    &jp_n7     &jp_n8  &jp_n9     &jp_n0
+&trans      &trans  &trans  &trans  &none                   &mkp MB5  &mkp LCLK  &mo 5   &mkp RCLK  &kp BACKSPACE
+&kp LSHFT   &trans  &trans  &trans  &trans                  &mkp MB4  &none      &none   &none      &none
+&trans      &trans  &trans  &trans  &trans  &trans  &trans  &mo 4                                   &none
             >;
         };
 
