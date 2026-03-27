@@ -31,7 +31,35 @@
 #define JP_RBRACE       PIPE              // }
 
 // -----------------------------------------------------
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+// その他のインクルードなど...
 
+/ {
+    behaviors {
+        mt_z: mod_tap_z {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOD_TAP_Z";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <300>;
+            quick-tap-ms = <150>;
+            bindings = <&kp>, <&kp>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                // ...他のキー...
+                &mt_z LSHFT Z    // ここにZキーを配置
+                // ...他のキー...
+            >;
+        };
+    };
+};
 #define DEFAULT 0
 #define NUM     1
 #define SYM     2
