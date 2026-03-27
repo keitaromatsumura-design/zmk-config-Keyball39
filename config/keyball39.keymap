@@ -218,8 +218,8 @@
             bindings = <
 &kp ESCAPE  &trans  &trans  &trans  &trans                  &jp_n6  &jp_n7     &jp_n8  &jp_n9     &jp_n0
 &trans      &trans  &trans  &trans  &none                   &trans  &mkp LCLK  &mo 5   &mkp RCLK  &kp BACKSPACE
-&kp LSHFT   &trans  &trans  &trans  &trans                  &trans  &none      &none   &none      &mkp MB5
-&trans      &trans  &trans  &trans  &trans  &trans  &trans  &mo 4                                 &mkp MB4
+&kp LSHFT   &trans  &trans  &trans  &trans                  &trans  &none      &none   &none      &mkp MB4
+&trans      &trans  &trans  &trans  &trans  &trans  &trans  &mo 4                                 &mkp MB5
             >;
         };
 
