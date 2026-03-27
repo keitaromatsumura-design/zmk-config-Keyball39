@@ -37,8 +37,8 @@ layers:
   - {t: '$$mdi:arrow-up-bold$$', h: FUN}
   - {t: '$$mdi:arrow-down-bold$$', h: SYM}
   - {t: '`', h: NUM, s: '~'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-space$$', h: MOUSE}
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', h: MOUSE}
   - {t: '$$mdi:backspace-reverse-outline$$', h: '$$mdi:apple-keyboard-shift$$'}
   NUM:
   - {t: '1', s: '!'}
@@ -94,7 +94,7 @@ layers:
   - {t: '=', s: +}
   - {t: '[', s: '{'}
   - {t: /, s: '?'}
-  - Sft+INT RO
+  - '*'
   - {t: '-', s: _}
   - {t: ;, s: ''''}
   - {t: '''', s: '"'}
@@ -104,8 +104,8 @@ layers:
   - {t: Sft+=, s: Sft++}
   - '&'
   - '?'
-  - {t: '-', s: _}
-  - {t: '-', s: _}
+  - {t: Sft+-, s: Sft+;}
+  - Sft+INTERNATIONAL 1
   - {t: Sft+;, s: 'Sft+:'}
   - '"'
   - {t: 'Sft+]', s: 'Sft+}'}
