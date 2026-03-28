@@ -51,7 +51,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - +
   - {t: /, s: '?'}
   - '*'
@@ -65,7 +65,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: Sft+-, s: Sft+;}
-  - {t: '=', s: +}
+  - Sft+INTERNATIONAL 1
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -131,7 +131,7 @@ layers:
   - F8
   - F9
   - F10
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-tab$$
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
