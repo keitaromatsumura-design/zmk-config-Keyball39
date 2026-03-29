@@ -209,7 +209,7 @@
 &kp F1   &kp F2          &kp F3        &kp F4     &kp F5                           &kp F6           &kp F7          &kp F8        &kp F9     &kp F10
 &kp TAB  &kp LEFT_ARROW  &kp UP_ARROW  &kp RIGHT  &kp PG_UP                        &kp PRINTSCREEN  &kt LEFT        &kp UP_ARROW  &kp RIGHT  &trans
 &none    &kp LEFT        &kp DOWN      &kp RIGHT  &kp PG_DN                        &none            &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans
-&trans   &trans          &trans        &trans     &trans     &trans  &bt BT_SEL 1  &bt BT_SEL 2                                              &trans
+&trans   &trans          &trans        &trans     &trans     &trans  &bt BT_SEL 1  &bt BT_SEL 2                                              &bt BT_CLR
             >;
         };
 
